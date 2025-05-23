@@ -1,7 +1,7 @@
-﻿services:
+services:
   - type: web
     name: webapplication1-service
-    env: dotnet
+    env: docker
     plan: free
     buildCommand: dotnet publish -c Release -o out
     startCommand: dotnet out/WebApplication1.dll
